@@ -1,0 +1,38 @@
+{% extends 'base/base.html' %}
+
+
+{% block content %}
+
+<form method="POSt">
+    {% csrf_token %}
+</br>
+<input type="text" name="firstname" placeholder="first name"  >
+</br>
+<input type="text" name="lastname" placeholder="last name"  >
+</br>
+<input type="email" name="email" placeholder="email"  >
+</br>
+<input type="password" name="password" placeholder="password"  >
+</br>
+<input type="password" name="confirmpassword" placeholder="confirm password"  >
+</br>
+<input type="date" name="" placeholder=""  >
+</br>
+<input type="number" name="phone number" placeholder="phone number"  >
+</br>
+<input type="number" name="id number" placeholder="id number"  >
+</br>
+<input type="text" name="address" placeholder="address"  >
+</br>
+<input type="text" name="grade" placeholder="grade"  >
+</br>
+<label for="img">Select image:</label>
+<input type="file" id="img" name="img" accept="image/*">
+<input type="submit">
+</br>
+<input type="reset"  placeholder="reset"  >
+</br>
+<input type="submit"placeholder="submit"  >
+</form>
+
+{% endblock content %}
